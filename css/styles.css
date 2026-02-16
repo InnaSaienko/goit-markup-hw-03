@@ -102,8 +102,9 @@ ol, a, li {
 .container {
     display: flex;
     gap: 24px;
-    margin: 0 auto;
     width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .section {
@@ -195,31 +196,34 @@ h3 {
 
     .container {
         justify-content: space-between;
-        padding: 0 15px;
+    }
+}
 
-        .nav-menu {
+.nav-menu {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    color: var(--navy-blue);
+
+    .nav-list {
+        display: flex;
+        gap: 40px;
+        .nav-item {
             display: flex;
-            align-items: center;
-            padding: 24px 0;
-            color: var(--navy-blue);
-
-            .nav-list {
-                display: flex;
-                gap: 40px;
-            }
-        }
-
-        address {
-            font-style: normal;
-
-            .contact-list {
-                display: flex;
-                gap: 40px;
-                margin: 24px 0;
-            }
         }
     }
 }
+
+address {
+    font-style: normal;
+
+    .contact-list {
+        display: flex;
+        gap: 40px;
+        margin: 24px 0;
+    }
+}
+
 
 p {
     font: var(--small-font);
@@ -247,7 +251,8 @@ p {
         max-width: 496px;
         margin: 0 auto;
 
-        .hero-title {        }
+        .hero-title {
+        }
 
         .button-wrapper {
             margin: 0 auto;
