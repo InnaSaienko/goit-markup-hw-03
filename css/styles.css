@@ -100,10 +100,10 @@ ol, a, li {
 }
 
 .container {
-    margin: 0 auto;
-    width: 1158px;
     display: flex;
     gap: 24px;
+    margin: 0 auto;
+    width: 1158px;
 }
 
 .section {
@@ -138,6 +138,10 @@ h3 {
     color: var(--grey);
 }
 
+.image {
+    display: block;
+}
+
 .brand-logo {
     font-family: "Raleway", sans-serif; /*redundant*/
     font-weight: 700; /*redundant*/
@@ -146,6 +150,7 @@ h3 {
     letter-spacing: 0.03em;
     color: var(--iris);
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .span-logo {
@@ -186,13 +191,16 @@ h3 {
 }
 
 .header {
+    border-bottom: 1px solid var(--cornflower);
+
     .container {
         justify-content: space-between;
+        padding: 0 15px;
 
         .nav-menu {
             display: flex;
-            gap: 76px;
-            margin: 24px 0;
+            align-items: center;
+            padding: 24px 0;
             color: var(--navy-blue);
 
             .nav-list {
