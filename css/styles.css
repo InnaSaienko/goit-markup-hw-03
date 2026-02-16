@@ -281,10 +281,16 @@ p {
 
 .footer {
     background: var(--navy-blue);
+    padding: 100px 0;
 }
 
-.footer-logo .span-logo {
-    color: var(--cloud);
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+
+    & .span-logo {
+        color: var(--cloud);
+    }
 }
 
 .footer-description {
