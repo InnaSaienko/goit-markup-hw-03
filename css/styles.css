@@ -1,0 +1,227 @@
+:root {
+
+    /* ===== TYPOGRAPHY ===== */
+
+    /* Font Sizes */
+    --fs-xs: 12px; /* Small text / Link text */
+    --fs-sm: 12px; /* Small text */
+    --fs-s: 16px; /* Body / Body Medium / Button Text */
+    --fs-m: 20px; /* Header 3 */
+    --fs-m-l: 24px; /*Extra text size*/
+    --fs-l: 36px; /* Header 2 */
+    --fs-xl: 56px; /* Header 1 */
+
+    /* Line Heights */
+    --lh-xs: 14px; /* Small text */
+    --lh-s: 16px; /* Link text */
+    --lh-m: 24px; /* Body / Body Medium / Button Text / Header 3 */
+    --lh-l: 36px; /* Header 2 (assumed 1:1, you can adjust) */
+    --lh-xl: 60px; /* Header 1 */
+
+    /*Letter spacing*/
+    --ls-s: 0.02em;
+    --ls-m: 0.04em;
+
+    /* Body */
+    --body-font: 400 'Roboto', 'Raleway', sans-serif;
+
+    /* Small text */
+    --small-font: 400 'Roboto', sans-serif;
+
+    /* Body Medium */
+    --body-medium-font: 500 'Roboto', sans-serif;
+
+    /* Button Text */
+    --btn-font: 500 'Roboto', sans-serif;
+
+    /* Link Text */
+    --link-font: 400 'Roboto', sans-serif;
+
+    /* Headers */
+    --h1-font: 700 'Roboto', sans-serif;
+
+    --h2-font: 700 'Roboto', sans-serif;
+
+    --h3-font: 500 'Roboto', sans-serif;
+
+    /* Logo */
+    --logo-font: 700 'Raleway', sans-serif;
+
+
+    /* ===== COLORS ===== */
+
+    --iris: #4D5AE5; /* Primary brand / links / active */
+    --ocean: #404BBF; /* Pressed / hover */
+
+    --navy: #2E2F42; /* Headings / dark / shadows */
+    --navy-blue: #2E2F42; /* Modal overlay */
+
+    --grey: #2E2F42; /* Hero background */
+
+    --slate: #434455; /* Body text */
+    --light-slate: #8E8F99; /* Helper text */
+
+    --green: #31D0AA; /* Success */
+
+    --cornflower: #E7E9FC; /* Hairlines / accents */
+    --cloud: #F4F4FD; /* Light backgrounds */
+
+    --white: #FFFFFF; /* Cards / header */
+    --dairy: #FCFCFC; /* Modal bg */
+
+
+    /* ===== STATES ===== */
+
+    --interactive-color: #404BBF;
+
+    --transition: 250ms ease-in-out;
+}
+
+
+
+body {
+    font: var(--body-font);
+    font-family: "Roboto", sans-serif; /*redundant*/
+    font-size: var(--fs-s); /*redundant*/
+    line-height: calc(var(--lh-m) / var(--fs-s));
+    letter-spacing: var(--ls-s);
+    color: var(--slate);
+    background: var(--white);
+}
+
+ul,
+ol, a, li {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Headers */
+h1 {
+    font: var(--h1-font);
+    font-size: var(--fs-xl); /*redundant*/
+    line-height: 1.07;
+    letter-spacing: var(--ls-s);
+    color: var(--white);
+    text-align: center;
+}
+
+h2 {
+    font: var(--h2-font);
+    font-weight: 500; /*redundant*/
+    font-size: var(--fs-l); /*redundant*/
+    line-height: 1.11;
+    letter-spacing: var(--ls-s);
+    color: var(--navy-blue);
+}
+
+h3 {
+    font: var(--h3-font);
+    font-size: var(--fs-m); /*redundant*/
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: var(--ls-s);
+    color: var(--grey);
+}
+
+.brand-logo {
+    font-family: "Raleway", sans-serif; /*redundant*/
+    font-weight: 700; /*redundant*/
+    font-size: 18px; /*redundant*/
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--iris);
+    text-transform: uppercase;
+}
+
+.span-logo {
+    color: var(--grey);
+}
+
+.link {
+    font: var(--link-font);
+    font-weight: 500; /*redundant*/
+    font-size: var(--fs-s);
+    line-height: 1.5;
+    letter-spacing: var(--ls-s);
+    color: var(--navy);
+}
+
+.link:hover, .link:active, .link:focus {
+    color: var(--interactive-color);
+}
+
+.button {
+    background: var(--iris);
+    color: var(--white);
+    font: var(--btn-font);
+    font-size: var(--fs-s);
+    font-weight: 500; /*redundant*/
+    line-height: 1.5;
+    letter-spacing: var(--ls-m);
+    cursor: pointer;
+}
+
+.button:hover, .button:focus {
+    background: var(--interactive-color);
+}
+
+.section-title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.header {
+    .nav-menu {
+        color: var(--navy-blue);
+    }
+}
+
+address {
+    font-style: normal;
+}
+
+p {
+    font: var(--small-font);
+    font-size: var(--fs-s);
+    line-height: 1.5;
+    letter-spacing: var(--ls-s);
+}
+
+.contact-link {
+    color: var(--slate);
+}
+
+.contact-link:hover, .contact-link:focus {
+    color: var(--ocean);
+}
+
+.hero {
+    background: var(--navy-blue);
+}
+
+.feature {
+    .team-card {
+        background-color: var(--white);
+    }
+}
+
+.team {
+    background: var(--cloud);
+}
+
+.team-card {
+    background-color: var(--white);
+}
+
+.footer {
+    background: var(--navy-blue);
+}
+
+.footer-logo .span-logo {
+    color: var(--cloud);
+}
+
+.footer-description {
+    color: var(--cloud);
+    line-height: 1.5;
+}
