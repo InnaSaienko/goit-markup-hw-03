@@ -259,6 +259,10 @@ p {
     max-width: 496px;
 }
 
+.visually-hidden {
+    visibility: hidden;
+}
+
 .feature-list {
     display: flex;
     gap: 24px;
@@ -267,9 +271,10 @@ p {
 .feature-item {
     width: calc((100% - 72px) / 4);
 
-    .feature-title {
-        margin-bottom: 8px;
-    }
+}
+
+.feature-title {
+    margin-bottom: 8px;
 }
 
 .team {
