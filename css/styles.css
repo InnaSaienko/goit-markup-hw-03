@@ -205,27 +205,26 @@ h3 {
     align-items: center;
     padding: 24px 0;
     color: var(--navy-blue);
+}
 
-    .nav-list {
-        display: flex;
-        gap: 40px;
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
 
-        .nav-item {
-            display: flex;
-        }
-    }
+.nav-item {
+    display: flex;
+    padding: 24px 0;
 }
 
 address {
     font-style: normal;
-
-    .contact-list {
-        display: flex;
-        gap: 40px;
-        margin: 24px 0;
-    }
 }
 
+.contact-list {
+    display: flex;
+    gap: 40px;
+}
 
 p {
     font: var(--small-font);
