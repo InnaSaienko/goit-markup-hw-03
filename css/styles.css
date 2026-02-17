@@ -356,6 +356,10 @@ p {
     }
 }
 
+.footer .container a {
+    display: inline-block;
+}
+
 .footer-description {
     color: var(--cloud);
     line-height: 1.5;
