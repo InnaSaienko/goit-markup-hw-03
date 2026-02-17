@@ -192,14 +192,15 @@ h3 {
 .header {
     border-bottom: 1px solid var(--cornflower);
 
-    .container {
-        display: flex;
-        gap: 24px;
-        width: 1158px;
-        margin: 0 auto;
-        padding: 0 15px;
-        justify-content: space-between;
-    }
+}
+
+.header .container {
+    display: flex;
+    gap: 24px;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
 }
 
 .nav-menu {
@@ -298,6 +299,10 @@ p {
     margin-bottom: 8px;
 }
 
+.team {
+    background: var(--cloud);
+}
+
 .team .container {
     display: flex;
     gap: 24px;
@@ -305,14 +310,12 @@ p {
     margin: 0 auto;
     padding: 0 15px;
 
-    .section-title {
-        margin-bottom: 72px;
-    }
 }
 
-.team {
-    background: var(--cloud);
+.team .container .section-title {
+    margin-bottom: 72px;
 }
+
 
 .team-list {
     display: flex;
