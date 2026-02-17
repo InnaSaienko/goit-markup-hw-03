@@ -144,14 +144,15 @@ h3 {
 }
 
 .brand-logo {
+    display: inline-block;
+    margin-right: 76px;
     font-family: "Raleway", sans-serif; /*redundant*/
     font-weight: 700; /*redundant*/
     font-size: 18px; /*redundant*/
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: var(--iris);
     text-transform: uppercase;
-    margin-right: 76px;
+    color: var(--iris);
 }
 
 .span-logo {
@@ -276,26 +277,31 @@ p {
 }
 
 .portfolio {
-    .section-title {
-        margin-bottom: 72px;
-    }
+}
 
-    .portfolio-list {
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 48px;
-    }
-    .portfolio-item {
-        width: calc((100% - 48px) / 3);
-    }
-    .portfolio-context {
-        padding: 32px 16px;
-        border: 1px solid var(--cornflower);
-        border-top: none;
-    }
-    .portfolio-category {
-        margin-bottom: 8px;
-    }
+.section-title {
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-context {
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower);
+    border-top: none;
+}
+
+.portfolio-category {
+    margin-bottom: 8px;
 }
 
 .footer {
