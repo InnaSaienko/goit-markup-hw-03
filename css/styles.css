@@ -256,17 +256,43 @@ p {
     max-width: 496px;
 }
 
-.feature {
-    .team-card {
-        background-color: var(--white);
+.feature-list {
+    display: flex;
+    gap: 24px;
+}
+
+.feature-item {
+    width: calc((100% - 72px) / 4);
+
+    .feature-title {
+        margin-bottom: 8px;
     }
 }
 
 .team {
     background: var(--cloud);
+}
 
-    .team-card {
-        background-color: var(--white);
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-card {
+    background-color: var(--white);
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+}
+
+.team-context {
+    padding: 32px 0;
+
+    .team-title {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .team-position {
+        text-align: center;
     }
 }
 
