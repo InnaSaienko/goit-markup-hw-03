@@ -296,10 +296,7 @@ p {
     }
 }
 
-.portfolio {
-}
-
-.section-title {
+.portfolio .section-title{
     margin-bottom: 72px;
 }
 
@@ -320,10 +317,9 @@ p {
     border-top: none;
 }
 
-.portfolio-category {
+.portfolio-title {
     margin-bottom: 8px;
 }
-
 .footer {
     background: var(--navy-blue);
     padding: 100px 0;
